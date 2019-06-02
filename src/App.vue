@@ -1,11 +1,17 @@
 <template>
-  <v-app></v-app>
+  <v-app>
+    <Header></Header>
+  </v-app>
 </template>
 
 <script>
+import Header from './components/Header'
+
 export default {
   name: "App",
-  components: {},
+  components: {
+    Header
+  },
   data() {
     return {
       //
