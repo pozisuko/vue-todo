@@ -3,9 +3,13 @@
 </template>
 
 <script>
+import Footer from "./components/Footer";
+
 export default {
   name: "App",
-  components: {},
+  components: {
+    Footer
+  },
   data() {
     return {
       //
