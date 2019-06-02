@@ -1,6 +1,7 @@
 <template>
   <v-app>
     <Header></Header>
+    <Footer></Footer>
   </v-app>
 </template>
 
