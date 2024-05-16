@@ -1,9 +1,11 @@
 
 <template>
-  <v-list-tile>
+  <v-list-tile v-if="!done">
     <v-list-tile-content>{{ title }}</v-list-tile-content>
     <v-list-tile-action>
-      <input type="checkbox" v-model="toggle" true-value="yes" false-value="no">
+      <div class="text-xs-center">
+        <v-btn outline color="success" @click="done=!done">Done</v-btn>
+      </div>
     </v-list-tile-action>
   </v-list-tile>
 </template>
@@ -13,7 +15,8 @@
 export default {
   data() {
     return {
-      toggle: "no"
+      toggle: "no",
+      done: false
     };
   },
   props: {
