@@ -1,3 +1,4 @@
+
 <template>
   <v-list-tile>
     <v-list-tile-content>{{ title }}</v-list-tile-content>
@@ -8,6 +9,7 @@
 </template>
 
 <script>
+// タイトルと完了したかどうかという状態を持つデータ
 export default {
   data() {
     return {
